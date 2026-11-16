@@ -1,0 +1,13 @@
+dataset,type,K,questions,RRF_win_Score2_loss,Score2_win_RRF_loss,loss_all_gold_in_final_pool,loss_common_q0_already_complete,Score2_net_questions
+hotpotqa,ALL,5,7205,1303,635,1303,1293,-668
+hotpotqa,comparison,5,1450,641,4,641,639,-637
+hotpotqa,ALL,10,7205,849,562,849,838,-287
+hotpotqa,comparison,10,1450,365,1,365,365,-364
+hotpotqa,ALL,20,7205,367,518,367,355,151
+hotpotqa,comparison,20,1450,110,1,110,110,-109
+hotpotqa,ALL,50,7205,99,410,99,76,311
+hotpotqa,comparison,50,1450,2,0,2,2,-2
+hotpotqa,bridge,5,5755,662,631,662,654,-31
+hotpotqa,bridge,10,5755,484,561,484,473,77
+hotpotqa,bridge,20,5755,257,517,257,245,260
+hotpotqa,bridge,50,5755,97,410,97,74,313

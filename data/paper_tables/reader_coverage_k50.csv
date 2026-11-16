@@ -1,0 +1,17 @@
+dataset,policy,K,n,F_count,strictF_count
+2wiki,hybrid_rrf,50,300,138,138
+2wiki,first_two_valid_titles,50,300,251,251
+2wiki,score2_u24,50,300,252,252
+2wiki,no_second_branch,50,300,250,250
+2wiki,score_two_reverse,50,300,250,250
+2wiki,score1_u24,50,300,215,215
+2wiki,family_u24,50,300,257,257
+2wiki,reverse_u24,50,300,252,252
+hotpotqa,hybrid_rrf,50,300,273,273
+hotpotqa,first_two_valid_titles,50,300,281,281
+hotpotqa,score2_u24,50,300,281,281
+hotpotqa,no_second_branch,50,300,280,280
+hotpotqa,score_two_reverse,50,300,280,280
+hotpotqa,score1_u24,50,300,277,277
+hotpotqa,family_u24,50,300,281,281
+hotpotqa,reverse_u24,50,300,280,280

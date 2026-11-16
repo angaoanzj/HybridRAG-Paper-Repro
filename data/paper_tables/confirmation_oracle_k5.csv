@@ -1,0 +1,13 @@
+dataset,pool,ranking,K,n,pool_complete,oracle_feasible,observed_complete,acquisition_failure,capacity_failure,ranking_failure
+2wiki,S2,before,5,1000,803,803,343,197,0,460
+2wiki,S2,after,5,1000,803,803,607,197,0,196
+2wiki,A,before,5,1000,863,863,164,137,0,699
+2wiki,A,after,5,1000,863,863,538,137,0,325
+hotpotqa,S2,before,5,1000,957,957,562,43,0,395
+hotpotqa,S2,after,5,1000,957,957,769,43,0,188
+hotpotqa,A,before,5,1000,977,977,654,23,0,323
+hotpotqa,A,after,5,1000,977,977,773,23,0,204
+musique,S2,before,5,1000,614,614,142,386,0,472
+musique,S2,after,5,1000,614,614,184,386,0,430
+musique,A,before,5,1000,705,705,120,295,0,585
+musique,A,after,5,1000,705,705,146,295,0,559

@@ -1,0 +1,13 @@
+# Optional retrieval, training and scoring dependencies.
+# The original experiment package versions were not frozen in the source release.
+# Choose a Python/PyTorch/CUDA combination supported by the local hardware.
+numpy
+scipy
+scikit-learn
+joblib
+torch
+transformers
+sentence-transformers
+# The reader generation scripts call an OpenAI-compatible local service.
+# Reconstructing the original service additionally requires the matching vllm
+# and compressed-tensors versions plus the exact archived reader checkpoint.

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "paper_version": "2026-11-13 revised clean manuscript",
+  "prepared_on": "2026-11-16",
+  "upstream_repository": "https://github.com/angaoanzj/HybridRAG-SDSIC-Repro",
+  "upstream_sources": [
+    {
+      "path": "pipeline/figure_sources/HybridRAG_结论与图表完整整合_20261109/build_manuscript_figures.py",
+      "sha256": "22fe050d52ac746431bc01755369bb481f425cab7e16951f075fa61f602f03d8"
+    },
+    {
+      "path": "pipeline/figure_sources/HybridRAG_K全池延伸_20261109/primary/results/paired_contrasts_K1_400.csv",
+      "sha256": "3a541a499eeb733f6069fe451334d920af1a4f36fcaf98018ec70159e5506738"
+    },
+    {
+      "path": "pipeline/figure_sources/HybridRAG_独立确认与论文修订_20261110/manuscript/build_confirmation_materials.py",
+      "sha256": "d1d5ecbfd3fa06949cd86eec13841f21b92c0867a6f86ab05587c1fcdb053387"
+    },
+    {
+      "path": "pipeline/figure_sources/HybridRAG_预冻结确认评估_20261110/results/summary.json",
+      "sha256": "927777149e1c576bc3a215e279ddd2f41aa34d6c6f06719fa101318c5c2f6b8f"
+    },
+    {
+      "path": "pipeline/figure_sources/reverse_curves.tex",
+      "sha256": "c7db042a9a100a83c80e4186ce1154eb46c575d6f48a8e3559b70fdd77df1585"
+    }
+  ],
+  "distributed_inputs": [
+    {
+      "path": "inputs/matched_query_contrasts.csv",
+      "sha256": "0bd19bbd31b54b324563660ff8d680913b761707f77fce984b169c96da2c3234",
+      "source_path": "pipeline/figure_sources/HybridRAG_K全池延伸_20261109/primary/results/paired_contrasts_K1_400.csv",
+      "source_sha256": "3a541a499eeb733f6069fe451334d920af1a4f36fcaf98018ec70159e5506738",
+      "projection": "Keep all original columns and exactly the no_second_branch minus repeat_q0_s2mask and repeat_q0_s2mask minus hybrid_rrf rows; all three datasets, K=1..400. CSV line endings are normalized by csv.DictWriter.",
+      "rows": 2400,
+      "figure": 1
+    },
+    {
+      "path": "inputs/confirmation_curves.csv",
+      "sha256": "4978564578eb39cf2ca258208817543f533c645259f655fcf7ba92b822bb14ae",
+      "source_path": "pipeline/figure_sources/HybridRAG_预冻结确认评估_20261110/results/summary.json",
+      "source_sha256": "927777149e1c576bc3a215e279ddd2f41aa34d6c6f06719fa101318c5c2f6b8f",
+      "projection": "Flatten all six dataset/pool K_grid lists for K=1..50; retain dataset, pool, K, n, pool_complete, before, after, wins, losses, pool_rate, before_rate, after_rate, delta_rate. Preserve the original numeric values.",
+      "rows": 300,
+      "figure": 2
+    },
+    {
+      "path": "inputs/reverse_curves.tex",
+      "sha256": "c7db042a9a100a83c80e4186ce1154eb46c575d6f48a8e3559b70fdd77df1585",
+      "source_path": "pipeline/figure_sources/reverse_curves.tex",
+      "source_sha256": "c7db042a9a100a83c80e4186ce1154eb46c575d6f48a8e3559b70fdd77df1585",
+      "projection": "Byte-for-byte source copy. Parse all eight saved series with 50 ordered coordinate pairs each. Skip the two explicit zero-reference lines.",
+      "coordinate_pairs": 400,
+      "figure": 3
+    }
+  ],
+  "figures": [
+    {
+      "number": 1,
+      "paper_file": "matched_query_fullk.pdf",
+      "original_plotter": "pipeline/figure_sources/HybridRAG_结论与图表完整整合_20261109/build_manuscript_figures.py",
+      "new_plotter": "plot_paper_figures.py",
+      "inputs": [
+        "inputs/matched_query_contrasts.csv"
+      ],
+      "changes": [
+        "Keep only the matched-query figure from the six-figure original program.",
+        "Keep panel positions, log K axis, limits, legend, colors and series values.",
+        "Use portable ReportLab Times-Roman in place of a macOS-specific Times New Roman path.",
+        "Remove unused aggregate inputs, manuscript copying and other figure-generation side effects."
+      ]
+    },
+    {
+      "number": 2,
+      "paper_file": "confirmation_fixed_pool_K1_50.pdf",
+      "original_plotter": "pipeline/figure_sources/HybridRAG_独立确认与论文修订_20261110/manuscript/build_confirmation_materials.py",
+      "new_plotter": "plot_paper_figures.py",
+      "inputs": [
+        "inputs/confirmation_curves.csv"
+      ],
+      "changes": [
+        "Reuse the original 2-by-3 ReportLab figure layout and the same aggregate rates.",
+        "Retain y limits 0..100, K=5 markers, color and dash encodings.",
+        "Use portable Times-Roman and resolve inputs relative to this script.",
+        "Read the public aggregate projection directly; the unpublished host-specific frozen protocol is outside this rendering workflow.",
+        "Remove table generation and historical directory dependencies."
+      ]
+    },
+    {
+      "number": 3,
+      "paper_file": "reverse_curves.pdf",
+      "original_plotter": "pipeline/figure_sources/reverse_curves.tex",
+      "new_plotter": "plot_paper_figures.py",
+      "inputs": [
+        "inputs/reverse_curves.tex"
+      ],
+      "changes": [
+        "Replay every saved TeX coordinate in ReportLab.",
+        "Preserve two panels, four series, line style/color families, linear K=1..50 and y=-2..2.",
+        "Use portable Times-Roman and ReportLab axes in place of TeX/PGFPlots rendering.",
+        "Glyph shapes, panel dimensions and rendering differ from the paper PDF."
+      ]
+    }
+  ],
+  "verification_scope": "Saved-aggregate figure rendering for Figures 1 and 2; saved-coordinate replay for Figure 3. Underlying labels, retrieval, training and reader outputs require their respective experiment pipelines.",
+  "new_code_sha256": "ef31c0c417a669825da2c04acbd38412d98bf5100f97e0cf5351170690023644"
+}

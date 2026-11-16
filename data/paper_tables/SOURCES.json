@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "source_archive": {
+    "name": "HybridRAG_LaTeX修订源码_20261113.zip",
+    "sha256": "1b3a1eb4f2f09e6bb4b586531f80f4cccaac72d73e6be3458d39be32adf5af91"
+  },
+  "scope": "Numeric saved-record and saved-aggregate projections from the 2026-11-13 manuscript source package.",
+  "files": [
+    {
+      "published_path": "data/paper_tables/primary_counts.csv",
+      "published_sha256": "85780c9a1f31256a6f309ea5e7469fa94e512b8656794b12bc78c0e2ea175a1c",
+      "records": 48,
+      "sources": [
+        {
+          "path": "manuscript/data/primary_fullpool_curves_K1_400.csv",
+          "sha256": "d4afd8accc10c199c84e316e77f6577f2fa40447b4d7da5e1ba5be99b53d9bd5"
+        }
+      ],
+      "projection": "Keep four paper policies at K=5,10,50,400 and numeric coverage counts."
+    },
+    {
+      "published_path": "data/paper_tables/query_unique_medians.csv",
+      "published_sha256": "f08a724fb91dafedd0ebb4df134beaaa4a71f02c11eb102a5210cd1f8c6bd239",
+      "records": 3,
+      "sources": [
+        {
+          "path": "manuscript/data/unique_documents_summary.csv",
+          "sha256": "25f5de373973058c9215c344d080d10bb3d6914f029b32aab1f3ad5984c8590a"
+        }
+      ],
+      "projection": "Keep strict-valid whole-cohort median candidate counts and recorded work-matching flag."
+    },
+    {
+      "published_path": "data/paper_tables/development_pairs.csv",
+      "published_sha256": "65b535a98bee553ae187964135ef873449148dbbd22d2664505326c57f7b10c5",
+      "records": 2400,
+      "sources": [
+        {
+          "path": "manuscript/data/development_fullpool_pairs_K1_400.csv",
+          "sha256": "ed86d15d74199ef89a9cf2615339dad7902e23da63143176f4946b9cfab17f95"
+        }
+      ],
+      "projection": "Keep whole-cohort integer contingency counts over K=1..400."
+    },
+    {
+      "published_path": "data/paper_tables/development_exhaustion.csv",
+      "published_sha256": "881326528ca12ee6a6d0e581690c0ed713b980db54c8e2f3cd5e83975e69cdba",
+      "records": 2400,
+      "sources": [
+        {
+          "path": "manuscript/data/development_fullpool_candidate_exhaustion_K1_400.csv",
+          "sha256": "fa023431326a70cef041dc7de53e150d5fe0d224eb4737b6a94a1e90d4b07399"
+        }
+      ],
+      "projection": "Keep whole-cohort candidate-exhaustion counts over K=1..400."
+    },
+    {
+      "published_path": "data/paper_tables/common_eligible.csv",
+      "published_sha256": "f8cf08081387d2c49c705e8137a2fad9b81bc805c6842fc8b2f5503f5e68bfb2",
+      "records": 3,
+      "sources": [
+        {
+          "path": "manuscript/data/common_eligible_pairs.csv",
+          "sha256": "789b66254930f57380a2653d555991980d7b7da02c00e547281dbc600fa851a9"
+        }
+      ],
+      "projection": "Keep common-eligibility contingency counts."
+    },
+    {
+      "published_path": "data/paper_tables/question_type_counts.csv",
+      "published_sha256": "08e1732af3497fe3222fe779d5867297271eea2184d4d2de903df85031647a27",
+      "records": 12,
+      "sources": [
+        {
+          "path": "manuscript/reproducibility/question_types19/smallK_ranking_mechanism.json",
+          "sha256": "64287c7e46d694451ee40ff024a647cf829f5c3f017a3c866ee1a438dfe700a2"
+        }
+      ],
+      "projection": "Keep saved historical HotpotQA title-coverage paired aggregate counts for the four paper cutoffs. Omit cases and free-text notes."
+    },
+    {
+      "published_path": "data/paper_tables/confirmation_k5.csv",
+      "published_sha256": "027a3bd1b70db0991940e654e70d350a6caf20851b128160e907e8a1caa582fd",
+      "records": 6,
+      "sources": [
+        {
+          "path": "manuscript/data/confirmation/confirmation_reanalysis.json",
+          "sha256": "22a0f8b542c9709cbe96d8273350fd1b25ee2a3671523c41fcdcc982d4ed7be4"
+        }
+      ],
+      "projection": "Keep K5 saved contingency counts, gamma, and previously computed descriptive bootstrap bounds. Intervals are carried from the source without a new bootstrap."
+    },
+    {
+      "published_path": "data/paper_tables/confirmation_oracle_k5.csv",
+      "published_sha256": "760a2a5825b12625f57742933505e4604bd7639667f487aeb68d91794a0eaa79",
+      "records": 12,
+      "sources": [
+        {
+          "path": "manuscript/data/confirmation/oracle_ceiling.json",
+          "sha256": "621290234f005cf46e2f10454f804241b0223d06b76cdea5d7d9035305fecbbf"
+        }
+      ],
+      "projection": "Keep K5 numeric oracle rows only. Drop source paths, timestamps, definitions, and other cutoffs."
+    },
+    {
+      "published_path": "data/paper_tables/reader_answers_k50.csv",
+      "published_sha256": "1252285b46e8d05cf0bcaf722e9e666c5209a2e00ebeda2525b786cbc01e49cb",
+      "records": 16,
+      "sources": [
+        {
+          "path": "manuscript/data/reader_answer_all.csv",
+          "sha256": "aff9cc2db10fc93b611aefc5f23f83a13b54485846ee6f326a86ea77c5b25e27"
+        }
+      ],
+      "projection": "Keep only the K50 conditions displayed in Table 6A, with numeric aggregate coverage/answer scores and policy identifiers. Omit unused policies, runtime and provenance strings."
+    },
+    {
+      "published_path": "data/paper_tables/reader_coverage_k50.csv",
+      "published_sha256": "f8717d71801952a31c332b975b0abc6097febeb677a2884d7f50ae730b882def",
+      "records": 16,
+      "sources": [
+        {
+          "path": "manuscript/data/reader_coverage_all.csv",
+          "sha256": "b4da08d63b5418c8cedd0111ef03316325af95265af119dcc81e58a1bed9aece"
+        }
+      ],
+      "projection": "Keep only the K50 conditions displayed in Table 6A, with numeric aggregate coverage/answer scores and policy identifiers. Omit unused policies, runtime and provenance strings."
+    },
+    {
+      "published_path": "data/paper_tables/reader_air_k50.csv",
+      "published_sha256": "875c1a4017df9a5f21ee3538434415b52d17ca700774847305609c77c7796997",
+      "records": 2,
+      "sources": [
+        {
+          "path": "manuscript/data/reader_air_results.csv",
+          "sha256": "b32cbfabd2c6933bb0c3c5f327e12f18cbf276e07fc8d5422d20f60bd044f07b"
+        }
+      ],
+      "projection": "Keep only the K50 conditions displayed in Table 6A, with numeric aggregate coverage/answer scores and policy identifiers. Omit unused policies, runtime and provenance strings."
+    },
+    {
+      "published_path": "data/paper_tables/family_pairs_k50.csv",
+      "published_sha256": "ac8274d30d5f00d7075c26c0439aa23bb116a17db677b86420620964f58d1089",
+      "records": 600,
+      "sources": [
+        {
+          "path": "manuscript/reproducibility/seven_comments/family_evidence/current/family_score_paired_minimal.csv",
+          "sha256": "8eef14b4090d04550ab3f7c88491c53473aedd40718b9aef71dcecab8247c30c"
+        }
+      ],
+      "projection": "Keep K50 paired dataset IDs, Boolean switches, calls, returns, pool/output title-coverage flags and EM scores. Drop input hashes and unused metrics."
+    },
+    {
+      "published_path": "data/paper_tables/dedup_counts_k50.csv",
+      "published_sha256": "b26ef382e4da5fc05c07fbe3c84afc3633254a2a22f6d7ba30045c1b4b8399c9",
+      "records": 2,
+      "sources": [
+        {
+          "path": "manuscript/reproducibility/seven_comments/dedup_evidence/compact_summary.json",
+          "sha256": "87ed1f0c1e4b01636d8dc7827d21aea06f2447b60531f83d2682d8e3014c513a"
+        }
+      ],
+      "projection": "Keep numeric original/single-version corpus sizes, unreachable counts, and strict-support successes. This retains audited historical aggregates without raw corpus reconstruction."
+    },
+    {
+      "published_path": "data/paper_tables/reverse_reader_pairs.csv",
+      "published_sha256": "00bc0e4e59a624e5e3ef9bb47026fdbc22ead9043ed83dab5ae1985a3722cf23",
+      "records": 4800,
+      "sources": [
+        {
+          "path": "manuscript/reproducibility/seven_comments/reverse_evidence/reader_pair_values.csv",
+          "sha256": "bdb19e6009e5772042ebc3dc3156d239882810c98cb74fe7bc5575f915717c8e"
+        }
+      ],
+      "projection": "Keep all paired IDs and numeric reference/reversed EM and F1 scores for K=10,20,30,50. Drop input hashes and policy aliases. No question, answer or prediction text is distributed."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv*/
+/external/
+derived*/
+figures/output/
+.DS_Store
+raw_rankings_and_calls.jsonl.gz
+musique_data_v1.0.zip
+musique_ans_v1.0_dev.jsonl
+*.joblib
+*.npz

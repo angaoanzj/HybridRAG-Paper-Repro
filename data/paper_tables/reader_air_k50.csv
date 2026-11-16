@@ -1,0 +1,3 @@
+dataset,condition,K,n,full_coverage_count,EM_count,F1
+2wiki,air_official5_fixedpool,50,300,140,81,29.015114848052026
+hotpotqa,air_official5_fixedpool,50,300,276,109,48.574672510725144

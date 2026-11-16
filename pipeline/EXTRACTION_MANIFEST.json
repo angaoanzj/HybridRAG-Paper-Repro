@@ -1,0 +1,400 @@
+{
+  "source_repository": "https://github.com/angaoanzj/HybridRAG-SDSIC-Repro",
+  "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+  "files": {
+    "pipeline/confirmation/original_code/expansion_variants.py": {
+      "source_path": "pipeline/confirmation/original_code/expansion_variants.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "5c1be734e8e742fba137c167dbb29d5a4dd890607011933d8b3f202d88115740",
+      "distributed_sha256": "5c1be734e8e742fba137c167dbb29d5a4dd890607011933d8b3f202d88115740",
+      "changes": []
+    },
+    "pipeline/confirmation/original_code/feedback.py": {
+      "source_path": "pipeline/confirmation/original_code/feedback.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "8bed5c9e5adc9c32042b662c31cb37198d897b34c7278155604f62728f539b28",
+      "distributed_sha256": "8bed5c9e5adc9c32042b662c31cb37198d897b34c7278155604f62728f539b28",
+      "changes": []
+    },
+    "pipeline/confirmation/original_code/full_train.py": {
+      "source_path": "pipeline/confirmation/original_code/full_train.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "c0348b9b47e6adb814c87fdb9bb7b7fea4e806f0b1a1c20b3b2006a1381836d3",
+      "distributed_sha256": "88b7db5ad3ce2a21cde36dc796ff4831983f09fc9e61bb6fa2b6e91d46e8cdb9",
+      "changes": [
+        "Configure training artifact root using HYBRIDRAG_TRAINING_ROOT",
+        "Configure corpus/index root using HYBRIDRAG_DATA_ROOT",
+        "Configure BGE checkpoint using HYBRIDRAG_BGE_MODEL"
+      ]
+    },
+    "pipeline/confirmation/original_code/order_variants.py": {
+      "source_path": "pipeline/confirmation/original_code/order_variants.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "205bf29e7e3b281eb3b25b839f3fc3a4c3b02e186113b4d33b8038597f4c170e",
+      "distributed_sha256": "205bf29e7e3b281eb3b25b839f3fc3a4c3b02e186113b4d33b8038597f4c170e",
+      "changes": []
+    },
+    "pipeline/confirmation/original_code/pilot_core.py": {
+      "source_path": "pipeline/confirmation/original_code/pilot_core.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "1ec13e9187aa130a2e0c1b42134dc4bf058ffc8535c2f1f6301bf72c770a31ec",
+      "distributed_sha256": "fdb1fbb5478d75e302529d92524c3d6aadf188b1b50c93b6728d9fc0e2eff1d6",
+      "changes": [
+        "Configure training artifact root using HYBRIDRAG_TRAINING_ROOT"
+      ]
+    },
+    "pipeline/confirmation/original_code/query_expansion.py": {
+      "source_path": "pipeline/confirmation/original_code/query_expansion.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "fddae2a25744ffcd9c44968e045da36a950a56d5014fe1b46ad55413f225e3bc",
+      "distributed_sha256": "fddae2a25744ffcd9c44968e045da36a950a56d5014fe1b46ad55413f225e3bc",
+      "changes": []
+    },
+    "pipeline/confirmation/original_code/retrieval_backends.py": {
+      "source_path": "pipeline/confirmation/original_code/retrieval_backends.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "9ad1e239675db78509063f8786766d18b57a4ef13710e609501596ff6f4e3af5",
+      "distributed_sha256": "9ad1e239675db78509063f8786766d18b57a4ef13710e609501596ff6f4e3af5",
+      "changes": []
+    },
+    "pipeline/confirmation/original_code/run_retrieval.py": {
+      "source_path": "pipeline/confirmation/original_code/run_retrieval.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "b231216f45e4af22bdd6409874bc27165ec7882904f956a9a9f6524f0c98ee62",
+      "distributed_sha256": "b231216f45e4af22bdd6409874bc27165ec7882904f956a9a9f6524f0c98ee62",
+      "changes": []
+    },
+    "pipeline/confirmation/scripts/freeze_confirmation.py": {
+      "source_path": "pipeline/confirmation/scripts/freeze_confirmation.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "5fbb301b6f6122aaad147c96ee94852b0f5849ef4dedc61dd21432a91760b0d0",
+      "distributed_sha256": "d670251ee860b2259447447adf22e14da6ede55e62e1951d0593c21e6f00c437",
+      "changes": [
+        "Import os for environment-configured paths",
+        "Configure confirmation output/input root with HYBRIDRAG_CONFIRMATION_ROOT",
+        "Configure audited question-selection sources using HYBRIDRAG_SOURCE_AUDIT_ROOT",
+        "Configure original protocol using HYBRIDRAG_ORIGINAL_PROTOCOL",
+        "Create selected output root before freezing new selection files"
+      ]
+    },
+    "pipeline/confirmation/scripts/run_confirmation.py": {
+      "source_path": "pipeline/confirmation/scripts/run_confirmation.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "dcbff4d36a74997fddd2b8bc72da9f04608ac8f7ae362a2b12bc7dd92235931e",
+      "distributed_sha256": "c4add89fc576dfa35149d2140c8423fff13ea32b341d1dc5bbeea82dd389d2ff",
+      "changes": [
+        "Configure confirmation output/input root with HYBRIDRAG_CONFIRMATION_ROOT",
+        "Resolve retained implementation imports from the published source directory",
+        "Configure original frozen training artifacts using HYBRIDRAG_ORIGINAL_TRAINING_ROOT",
+        "Configure corpus and index root using HYBRIDRAG_DATA_ROOT",
+        "Configure local BGE checkpoint using HYBRIDRAG_BGE_MODEL"
+      ]
+    },
+    "pipeline/confirmation/scripts/verify_and_summarize.py": {
+      "source_path": "pipeline/confirmation/scripts/verify_and_summarize.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "8332e02c6122de4e0b905e46937ed544803a8e9a73f93bc0096f6750f8def0ef",
+      "distributed_sha256": "fd2e5933d73d1b3c88e666301d99cf8b425cd3d6b321ca7f3ca849e1e3965177",
+      "changes": [
+        "Import os for environment-configured paths",
+        "Configure confirmation output/input root with HYBRIDRAG_CONFIRMATION_ROOT",
+        "Configure original frozen training artifacts using HYBRIDRAG_ORIGINAL_TRAINING_ROOT",
+        "Configure corpus root using HYBRIDRAG_DATA_ROOT"
+      ]
+    },
+    "pipeline/frozen_reader_conditions/retrieval_code/build_index.py": {
+      "source_path": "pipeline/frozen_reader_conditions/retrieval_code/build_index.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "b7dffda44d1fcd579b0d2f792a27f2947e5f137772affeb1bd9b4f7a8f7c9734",
+      "distributed_sha256": "105e1e19d0d884dfc2b365c2b2a42768ad41e86687a01d1971728df95068cf49",
+      "changes": [
+        "Defer scientific-library imports until after command-line parsing so --help runs without model/scientific dependencies"
+      ]
+    },
+    "pipeline/frozen_reader_conditions/retrieval_code/cue_runtime.py": {
+      "source_path": "pipeline/frozen_reader_conditions/retrieval_code/cue_runtime.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "bd2be3b920a37a42e21a5e43edd379d57aa08459da54272abc7bd3a68661218d",
+      "distributed_sha256": "bd2be3b920a37a42e21a5e43edd379d57aa08459da54272abc7bd3a68661218d",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/retrieval_code/expansion_variants.py": {
+      "source_path": "pipeline/frozen_reader_conditions/retrieval_code/expansion_variants.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "f8c202f7e453c6c94ddab4be99310d330359b823b05b590e12c88c8fdea99918",
+      "distributed_sha256": "f8c202f7e453c6c94ddab4be99310d330359b823b05b590e12c88c8fdea99918",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/retrieval_code/frozen_core_variants.py": {
+      "source_path": "pipeline/frozen_reader_conditions/retrieval_code/frozen_core_variants.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "f665bd86964885f0b8bd0606ecfe24c0fc1e236551f7265562b08159171b592b",
+      "distributed_sha256": "f665bd86964885f0b8bd0606ecfe24c0fc1e236551f7265562b08159171b592b",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/retrieval_code/frozen_entity_variants.py": {
+      "source_path": "pipeline/frozen_reader_conditions/retrieval_code/frozen_entity_variants.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "c4d38907999fd55c9022427093ad50f7f7b0bd11f50c94bb4f228aa64b50d0b4",
+      "distributed_sha256": "c4d38907999fd55c9022427093ad50f7f7b0bd11f50c94bb4f228aa64b50d0b4",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/retrieval_code/frozen_order_variants.py": {
+      "source_path": "pipeline/frozen_reader_conditions/retrieval_code/frozen_order_variants.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "c491ddb8b6d098c154747b23ac0dde02a320742eefedaea3c3e32b4e93890a71",
+      "distributed_sha256": "c491ddb8b6d098c154747b23ac0dde02a320742eefedaea3c3e32b4e93890a71",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/retrieval_code/query_expansion.py": {
+      "source_path": "pipeline/frozen_reader_conditions/retrieval_code/query_expansion.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "590879d389ec6fb0e381961d13293264db3120d89030ad3fe5af9dc667bb1c11",
+      "distributed_sha256": "590879d389ec6fb0e381961d13293264db3120d89030ad3fe5af9dc667bb1c11",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/retrieval_code/retrieval_backends.py": {
+      "source_path": "pipeline/frozen_reader_conditions/retrieval_code/retrieval_backends.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "9ad1e239675db78509063f8786766d18b57a4ef13710e609501596ff6f4e3af5",
+      "distributed_sha256": "9ad1e239675db78509063f8786766d18b57a4ef13710e609501596ff6f4e3af5",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/retrieval_code/reviewer_extensions.py": {
+      "source_path": "pipeline/frozen_reader_conditions/retrieval_code/reviewer_extensions.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "217e22e90bf02b4932d476933b611c92ec33ffb571ae1dae782d83de6197bb1a",
+      "distributed_sha256": "217e22e90bf02b4932d476933b611c92ec33ffb571ae1dae782d83de6197bb1a",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/retrieval_code/reviewer_runner.py": {
+      "source_path": "pipeline/frozen_reader_conditions/retrieval_code/reviewer_runner.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "732b119ef9b5709d6ebd09790eca3f0b771160d4e3af141f33e98db449f35b6b",
+      "distributed_sha256": "732b119ef9b5709d6ebd09790eca3f0b771160d4e3af141f33e98db449f35b6b",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/retrieval_code/run_retrieval.py": {
+      "source_path": "pipeline/frozen_reader_conditions/retrieval_code/run_retrieval.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "b231216f45e4af22bdd6409874bc27165ec7882904f956a9a9f6524f0c98ee62",
+      "distributed_sha256": "b231216f45e4af22bdd6409874bc27165ec7882904f956a9a9f6524f0c98ee62",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/retrieval_code/wordnet_lexicon.py": {
+      "source_path": "pipeline/frozen_reader_conditions/retrieval_code/wordnet_lexicon.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "df2b43e301bbb308345a4f4194af8ab5e675032bedd7074a536cff563371fedf",
+      "distributed_sha256": "df2b43e301bbb308345a4f4194af8ab5e675032bedd7074a536cff563371fedf",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/reader_code/capture_reader_service.py": {
+      "source_path": "pipeline/frozen_reader_conditions/reader_code/capture_reader_service.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "535763becf79d7c7b648758043973fa53b3bd18b44e975ce96b7d7910f51ec69",
+      "distributed_sha256": "535763becf79d7c7b648758043973fa53b3bd18b44e975ce96b7d7910f51ec69",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/reader_code/freeze_reader_plan.py": {
+      "source_path": "pipeline/frozen_reader_conditions/reader_code/freeze_reader_plan.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "6b159acc9834c797101ec2209c4ab70cf2aad1a8dd4ffd7fce19bb2e2a32ab3d",
+      "distributed_sha256": "6b159acc9834c797101ec2209c4ab70cf2aad1a8dd4ffd7fce19bb2e2a32ab3d",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/reader_code/generate_answers.py": {
+      "source_path": "pipeline/frozen_reader_conditions/reader_code/generate_answers.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "c5bbe78ded8ebde710f5b51cfd84c750226ce1e7502c02ddff4e6e2b47fc7a32",
+      "distributed_sha256": "c5bbe78ded8ebde710f5b51cfd84c750226ce1e7502c02ddff4e6e2b47fc7a32",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/reader_code/paired_stats.py": {
+      "source_path": "pipeline/frozen_reader_conditions/reader_code/paired_stats.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "1a7f241b00d982b6fe8867b21b11dc6878dea1bc1d26092d5ef41c3858a9235a",
+      "distributed_sha256": "1a7f241b00d982b6fe8867b21b11dc6878dea1bc1d26092d5ef41c3858a9235a",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/reader_code/score_all_reader.py": {
+      "source_path": "pipeline/frozen_reader_conditions/reader_code/score_all_reader.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "702b19a23a6b97f9120823261499a6d439cbbdb55e2f4452c36751acc63b34bf",
+      "distributed_sha256": "702b19a23a6b97f9120823261499a6d439cbbdb55e2f4452c36751acc63b34bf",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/reader_code/score_selfcheck.py": {
+      "source_path": "pipeline/frozen_reader_conditions/reader_code/score_selfcheck.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "b9877ea4d5faf78e597acad15bf076ea3a5d37517a18d2be42be46af0019d67e",
+      "distributed_sha256": "b9877ea4d5faf78e597acad15bf076ea3a5d37517a18d2be42be46af0019d67e",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/reader_reference/export_saved_retrieval_inputs.py": {
+      "source_path": "pipeline/frozen_reader_conditions/reader_reference/export_saved_retrieval_inputs.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "fb4c9f5f234b60be5b2f9f73232e445fb647662b29a5da5aca6a9aa407e79f3b",
+      "distributed_sha256": "528a0fa6b795cf7f344c5b6d24bebf7851506c42f7b6fa4340ca69615d617e40",
+      "changes": [
+        "Import os for environment-configured paths",
+        "Configure retained retrieval outputs using HYBRIDRAG_RETRIEVAL_ROOT",
+        "Configure reader export root using HYBRIDRAG_READER_EXPORT_ROOT",
+        "Create configured export parent directories"
+      ]
+    },
+    "pipeline/frozen_reader_conditions/reader_reference/prepare_canonical_inputs.py": {
+      "source_path": "pipeline/frozen_reader_conditions/reader_reference/prepare_canonical_inputs.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "f5cb6571613f57912b479b99e63565f282cb9207f59fe67e2b4d8e517976aa59",
+      "distributed_sha256": "d71fe214da4a6ca83d6a8ccbee88aae1c891efbb78bcf6ca4016c0af1aea9892",
+      "changes": [
+        "Resolve the distributed prompt reference beside the preparation script",
+        "Configure reader experiment root using HYBRIDRAG_READER_ROOT",
+        "Configure archived reader reuse inputs using HYBRIDRAG_READER_MATCHED_HISTORY",
+        "Configure archived reader reuse inputs using HYBRIDRAG_READER_PILOT_HISTORY",
+        "Configure archived reader reuse inputs using HYBRIDRAG_READER_AIR_HISTORY",
+        "Create configured reader input parent directories",
+        "Validate archived reader protocols against the original prompt-worker source hash and also record the configured distributed worker hash"
+      ]
+    },
+    "pipeline/frozen_reader_conditions/reader_reference/reader_worker.py": {
+      "source_path": "pipeline/frozen_reader_conditions/reader_reference/reader_worker.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "a358cbc3d24c33f426c1c32abb12a743408b54b21231fb497e654a8746fa7c48",
+      "distributed_sha256": "2c3aa979c5d8e74d628a00cf24aeefe008f5167f42da3f57b4cef81f4eff3149",
+      "changes": [
+        "Configure archived reader root and local reader checkpoint",
+        "Configure local reader endpoint while preserving request content",
+        "Configure local reader endpoint while preserving generation parameters"
+      ]
+    },
+    "pipeline/musique_extension_snapshot/code/expansion_variants.py": {
+      "source_path": "pipeline/musique_extension_snapshot/code/expansion_variants.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "5c1be734e8e742fba137c167dbb29d5a4dd890607011933d8b3f202d88115740",
+      "distributed_sha256": "5c1be734e8e742fba137c167dbb29d5a4dd890607011933d8b3f202d88115740",
+      "changes": []
+    },
+    "pipeline/musique_extension_snapshot/code/order_variants.py": {
+      "source_path": "pipeline/musique_extension_snapshot/code/order_variants.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "205bf29e7e3b281eb3b25b839f3fc3a4c3b02e186113b4d33b8038597f4c170e",
+      "distributed_sha256": "205bf29e7e3b281eb3b25b839f3fc3a4c3b02e186113b4d33b8038597f4c170e",
+      "changes": []
+    },
+    "pipeline/musique_extension_snapshot/code/prepare_musique.py": {
+      "source_path": "pipeline/musique_extension_snapshot/code/prepare_musique.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "e0836ede02750e1b970b09f7eef168dddb3bc321ffa134db2af6388523c3ce13",
+      "distributed_sha256": "4e7ddc5cbe71e54e4b7316d870116cead90831fb4a141ac2aa0909e82d096f50",
+      "changes": [
+        "Import os for environment-configured paths",
+        "Configure original-data preparation output root using HYBRIDRAG_MUSIQUE_ROOT",
+        "Configure official MuSiQue input using HYBRIDRAG_MUSIQUE_SOURCE while retaining its exact hash gate"
+      ]
+    },
+    "pipeline/musique_extension_snapshot/code/query_expansion.py": {
+      "source_path": "pipeline/musique_extension_snapshot/code/query_expansion.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "fddae2a25744ffcd9c44968e045da36a950a56d5014fe1b46ad55413f225e3bc",
+      "distributed_sha256": "fddae2a25744ffcd9c44968e045da36a950a56d5014fe1b46ad55413f225e3bc",
+      "changes": []
+    },
+    "pipeline/musique_extension_snapshot/code/retrieval_backends.py": {
+      "source_path": "pipeline/musique_extension_snapshot/code/retrieval_backends.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "9ad1e239675db78509063f8786766d18b57a4ef13710e609501596ff6f4e3af5",
+      "distributed_sha256": "9ad1e239675db78509063f8786766d18b57a4ef13710e609501596ff6f4e3af5",
+      "changes": []
+    },
+    "pipeline/musique_extension_snapshot/code/run_retrieval.py": {
+      "source_path": "pipeline/musique_extension_snapshot/code/run_retrieval.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "b231216f45e4af22bdd6409874bc27165ec7882904f956a9a9f6524f0c98ee62",
+      "distributed_sha256": "b231216f45e4af22bdd6409874bc27165ec7882904f956a9a9f6524f0c98ee62",
+      "changes": []
+    },
+    "pipeline/musique_extension_snapshot/code/study.py": {
+      "source_path": "pipeline/musique_extension_snapshot/code/study.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "12dd22fcaaf40aa75f1992296f3c0fb88a1a35c31b884f81a4b86d11971c8823",
+      "distributed_sha256": "60ee8c57bc389925d581cd200481772f9cc7b8f6cf10ecb716bff6e5b5920ce5",
+      "changes": [
+        "Configure MuSiQue preparation/index root using HYBRIDRAG_MUSIQUE_ROOT"
+      ]
+    },
+    "pipeline/musique_nine_schedule/frozen_sources.json": {
+      "source_path": "pipeline/musique_nine_schedule/frozen_sources.json",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "6a9c361de111a463b2c7fbf2d8f79ebb2ea12f5a6fcc6276c14ad4c3c1c7653b",
+      "distributed_sha256": "6a9c361de111a463b2c7fbf2d8f79ebb2ea12f5a6fcc6276c14ad4c3c1c7653b",
+      "changes": []
+    },
+    "pipeline/musique_nine_schedule/original_data_manifest.json": {
+      "source_path": "pipeline/musique_nine_schedule/original_data_manifest.json",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "5388db91c7dbbbf63d3bc00f55f2838d20ebd9fa3398e8d5a3cf1fea4106170d",
+      "distributed_sha256": "5388db91c7dbbbf63d3bc00f55f2838d20ebd9fa3398e8d5a3cf1fea4106170d",
+      "changes": []
+    },
+    "pipeline/musique_nine_schedule/question_ids.json": {
+      "source_path": "pipeline/musique_nine_schedule/question_ids.json",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "572c23ee9f2c2dc45c4677358e5caf62ccd0ec6509f6bec68b1dc99a5e276566",
+      "distributed_sha256": "572c23ee9f2c2dc45c4677358e5caf62ccd0ec6509f6bec68b1dc99a5e276566",
+      "changes": []
+    },
+    "pipeline/musique_nine_schedule/run_multiround.py": {
+      "source_path": "pipeline/musique_nine_schedule/run_multiround.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "6c97c18e54c354a413183c573a5d902e6cbdf64e791dc1a9ae95bbf318d75709",
+      "distributed_sha256": "05531c6ea97c62011b544ffae61d37d6949e3bb858f181f3ef83b9f2a34e6bf8",
+      "changes": [
+        "Update stale preparation-only description to the recorded paper experiment",
+        "Remove historical host-specific launch restriction while preserving input/model/source hash gates and computation"
+      ]
+    },
+    "pipeline/musique_nine_schedule/selfcheck_control_flow.py": {
+      "source_path": "pipeline/musique_nine_schedule/selfcheck_control_flow.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "2d24021e76be7f4013e75ce5cea2087d81bc50f01a097fbcbd6808bf21e6a1d3",
+      "distributed_sha256": "2d24021e76be7f4013e75ce5cea2087d81bc50f01a097fbcbd6808bf21e6a1d3",
+      "changes": []
+    },
+    "pipeline/musique_nine_schedule/frozen/expansion_variants.py": {
+      "source_path": "pipeline/musique_nine_schedule/frozen/expansion_variants.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "5c1be734e8e742fba137c167dbb29d5a4dd890607011933d8b3f202d88115740",
+      "distributed_sha256": "5c1be734e8e742fba137c167dbb29d5a4dd890607011933d8b3f202d88115740",
+      "changes": []
+    },
+    "pipeline/musique_nine_schedule/frozen/query_expansion.py": {
+      "source_path": "pipeline/musique_nine_schedule/frozen/query_expansion.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "fddae2a25744ffcd9c44968e045da36a950a56d5014fe1b46ad55413f225e3bc",
+      "distributed_sha256": "fddae2a25744ffcd9c44968e045da36a950a56d5014fe1b46ad55413f225e3bc",
+      "changes": []
+    },
+    "pipeline/musique_nine_schedule/frozen/retrieval_backends.py": {
+      "source_path": "pipeline/musique_nine_schedule/frozen/retrieval_backends.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "9ad1e239675db78509063f8786766d18b57a4ef13710e609501596ff6f4e3af5",
+      "distributed_sha256": "9ad1e239675db78509063f8786766d18b57a4ef13710e609501596ff6f4e3af5",
+      "changes": []
+    },
+    "pipeline/musique_nine_schedule/frozen/run_retrieval.py": {
+      "source_path": "pipeline/musique_nine_schedule/frozen/run_retrieval.py",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "b231216f45e4af22bdd6409874bc27165ec7882904f956a9a9f6524f0c98ee62",
+      "distributed_sha256": "b231216f45e4af22bdd6409874bc27165ec7882904f956a9a9f6524f0c98ee62",
+      "changes": []
+    },
+    "pipeline/frozen_reader_conditions/official_scoring_source_receipt.json": {
+      "source_path": "pipeline/frozen_reader_conditions/official_scoring_source_receipt.json",
+      "source_commit": "c1f1a38a330c77e9b96c344bce3da125ba03873b",
+      "source_sha256": "0b2ce573995ff14b6839c2d5db3047fed7ad4b0ad56daaf847eace57340afcad",
+      "distributed_sha256": "0b2ce573995ff14b6839c2d5db3047fed7ad4b0ad56daaf847eace57340afcad",
+      "changes": []
+    }
+  }
+}

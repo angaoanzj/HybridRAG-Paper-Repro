@@ -1,0 +1,4 @@
+dataset,questions,repeat_unique_docs_median,S2_unique_docs_median,D_and_calls_equal_all_questions
+2wiki,12376,190.0,345.0,True
+hotpotqa,7204,182.0,282.0,True
+musique,2311,180.0,269.0,True
